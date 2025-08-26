@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -15,9 +16,9 @@ import { usePathname } from "next/navigation";  // Usa usePathname al posto di u
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
   { href: "/", label: "Home" },
-  { href: "/work-in-progress", label: "Menu" },
-  { href: "/work-in-progress", label: "Chi siamo" },
-  { href: "/work-in-progress", label: "Contatti" },
+  { href: "/menu", label: "Menu" },
+  { href: "/chi-siamo", label: "Chi siamo" },
+  { href: "/contatti", label: "Contatti" },
 ];
 
 export default function DesktopNavbar() {
@@ -34,7 +35,7 @@ export default function DesktopNavbar() {
         <div className="flex gap-2">
           <div className="flex items-center">
             {/* Logo */}
-            <a href="/" className="text-primary hover:text-primary/90">
+            <Link href="/" className="text-primary hover:text-primary/90">
               <Image
                 src="/logo.webp"
                 alt="Logo"
@@ -42,7 +43,7 @@ export default function DesktopNavbar() {
                 height={120} // Altezza di base
                 className="max-w-[180px] h-auto" // Assicura che il logo si ridimensioni proporzionalmente
               />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -58,7 +59,7 @@ export default function DesktopNavbar() {
                       pathname === link.href
                         ? "text-primary border-b-primary"
                         : "text-muted-foreground"
-                    } hover:text-primary border-b-primary hover:border-b-primary h-full justify-center rounded-none border-y-2 border-transparent py-1.5 font-bold hover:bg-transparent data-[active]:bg-transparent! data-[active]:text-primary`}
+                    } hover:text-primary border-b-primary hover:border-b-primary h-full justify-center rounded-none border-y-2 border-transparent py-1.5 font-bold hover:bg-sidebar focus:outline-none focus:border-b-primary`}
                   >
                     <Link href={link.href}>{link.label}</Link>
                   </NavigationMenuLink>

@@ -1,5 +1,5 @@
-"use client";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image"; // Importa il componente Image di Next.js
 
 const images = [
   "image1.webp",
@@ -10,7 +10,7 @@ const images = [
   "image6.webp",
 ];
 
-const MultipleImagesFreeLayout = ({
+const RootImages = ({
   onAnimationComplete,
 }: {
   onAnimationComplete: () => void;
@@ -113,12 +113,14 @@ const MultipleImagesFreeLayout = ({
             transitionDelay: `${index * 0.3}s`,
           }}
         >
-          <img
+          {/* Sostituzione con Image di Next.js */}
+          <Image
             src={`/home-page/${img}`}
             alt={`Image ${index + 1}`}
             width={baseSizes[index].width * windowSize.width * scaleFactor}
             height={baseSizes[index].height * windowSize.height * scaleFactor}
             className="object-cover rounded-2xl shadow-lg"
+            loading="lazy"
           />
         </div>
       ))}
@@ -126,4 +128,4 @@ const MultipleImagesFreeLayout = ({
   );
 };
 
-export default MultipleImagesFreeLayout;
+export default RootImages;

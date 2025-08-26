@@ -21,10 +21,10 @@ const WorkInProgress = () => {
 
         <p className="mt-4 max-w-lg text-xl text-gray-800">
           Grazie per aver dato uno sguardo a questo piccolo lavoro, spero che
-          possa essere solo  <strong>l'inizio del progetto vero e proprio!</strong> 
+          possa essere solo <strong>l&apos;inizio del progetto vero e proprio!</strong> 
           <br />
           Ciò che avete osservato fino ad ora è solo una bozza che può e deve essere ripensata
-          insieme a voi, serve perché possiate avere un'idea di ciò che può
+          insieme a voi, serve perché possiate avere un&apos;idea di ciò che può
           essere, della mia dedizione in questo lavoro e di quanto possa influire nel vostro <strong>brand identity</strong>. 
           <br />
           Un sito web che comprenda, <strong>in un unico link</strong>, tutte le informazioni necessarie e
@@ -36,7 +36,7 @@ const WorkInProgress = () => {
           interessati ad avere anche solo una <strong>semplice chiacchierata</strong> senza
           impegni.
           <br />
-          Grazie ancora per l'attenzione...anzi <strong>Mahalo!</strong>
+          Grazie ancora per l&apos;attenzione...anzi <strong>Mahalo!</strong>
         </p>
 
         <div className="mt-8 w-full max-w-md space-y-6 text-center">

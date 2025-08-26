@@ -1,9 +1,8 @@
-// components/home/hero-section.tsx
-
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import Image from "next/image"; // Importa il componente Image di Next.js
 
 const HeroSection = () => {
   return (
@@ -15,10 +14,13 @@ const HeroSection = () => {
         animate={{ scale: 1 }}  // Si espande fino alla dimensione normale
         transition={{ duration: 2, ease: "easeInOut" }} // Imposta la durata e la transizione
       >
-        <img 
-          src="home-page/test.jpeg"  // Verifica il percorso corretto
+        {/* Sostituzione con Image di Next.js */}
+        <Image 
+          src="/home-page/test.jpeg"  // Usa il percorso corretto
           alt="Hero" 
-          className="w-full h-full object-cover"  // Garantisce che l'immagine copra tutta l'area
+          layout="fill"  // Impostato su fill per coprire tutta l'area
+          objectFit="cover"  // Assicura che l'immagine copra l'intera area senza deformazioni
+          priority  // Aggiunge il caricamento prioritario per questa immagine
         />
       </motion.div>
 
