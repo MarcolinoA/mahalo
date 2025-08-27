@@ -59,9 +59,10 @@ export default function MobileNavbar() {
         >
           <div className="flex flex-col justify-start items-start gap-6 p-6">
             <MobileNavItem href="/" label="Home" />
-            <MobileNavItem href="/work-in-progress" label="Menu" />
-            <MobileNavItem href="/work-in-progress" label="Chi Siamo" />
-            <MobileNavItem href="/work-in-progress" label="Contatti" />
+            <MobileNavItem href="menu" label="Menu" />
+            <MobileNavItem href="chi-siamo" label="Chi Siamo" />
+            <MobileNavItem href="/contatti" label="Contatti" />
+            <MobileNavItem href="/prenota" label="Prenota" />
           </div>
         </SheetContent>
       </Sheet>

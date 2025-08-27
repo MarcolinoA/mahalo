@@ -11,7 +11,7 @@ import Image from "next/image";
 import MobileNavbar from "./mobile-navbar";
 import "@fontsource/pacifico";
 import Link from "next/link";
-import { usePathname } from "next/navigation";  // Usa usePathname al posto di useRouter
+import { usePathname } from "next/navigation";
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
