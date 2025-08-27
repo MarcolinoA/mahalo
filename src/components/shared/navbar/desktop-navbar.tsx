@@ -77,7 +77,7 @@ export default function DesktopNavbar() {
             size="lg"
             className="p-0 text-primary font-bold text-3xl"
           >
-            <Link href="/work-in-progress" className="p-0">
+            <Link href="/prenota" className="p-0">
               Prenota Ora!
             </Link>
           </Button>
